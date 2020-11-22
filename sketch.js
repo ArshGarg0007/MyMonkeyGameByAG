@@ -31,7 +31,7 @@ ground=createSprite(300,350,600,10)
 }
 
 function draw() {
-  background(200)
+  background(201);
   stroke("black");
   textSize(20);
   text("Survival Time: "+survivaltime,100,50);
