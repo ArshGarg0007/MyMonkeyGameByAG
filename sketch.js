@@ -35,7 +35,7 @@ function draw() {
   stroke("black");
   textSize(20);
   text("Survival Time: "+survivaltime,100,50);
-  survivaltime=Math.ceil(frameCount/frameRate())
+  survivaltime=survivaltime+Math.round(frameCount%25===0)
  ground.velocityX=-7;
   if(ground.x<300){
     ground.x=ground.width/2
